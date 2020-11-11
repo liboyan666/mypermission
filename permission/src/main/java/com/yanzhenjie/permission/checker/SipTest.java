@@ -17,7 +17,6 @@ package com.yanzhenjie.permission.checker;
 
 import android.content.Context;
 import android.net.sip.SipManager;
-import android.net.sip.SipProfile;
 
 /**
  * Created by YanZhenjie on 2018/1/25.
@@ -39,11 +38,11 @@ class SipTest implements PermissionTest {
         if (manager == null) {
             return true;
         }
-        SipProfile.Builder builder = new SipProfile.Builder("Permission", "127.0.0.1");
+        /*SipProfile.Builder builder = new SipProfile.Builder("Permission", "127.0.0.1");
         builder.setPassword("password");
         SipProfile profile = builder.build();
         manager.open(profile);
-        manager.close(profile.getUriString());
+        manager.close(profile.getUriString());*/
         return true;
     }
 }
